@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/selectButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/index_select_part1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+         <com.example.fullenergy.extend_plug.RecyclableImageView.RecyclableImageView
+            android:id="@+id/selectButtonImage"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/bottom_close_1" />
+
+        <TextView
+            android:id="@+id/selectButtonText"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#666666"
+            android:text="全部换电站"
+            android:textSize="11dp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/selectList"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/index_select_part1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/panelIndexIndexSelect1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="5公里以内"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/panelIndexIndexSelect2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="10公里以内"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/panelIndexIndexSelect3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="50公里以内"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/panelIndexIndexSelect4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="全部"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:background="@color/title_orange"/>
+    </LinearLayout>
+
+</LinearLayout>

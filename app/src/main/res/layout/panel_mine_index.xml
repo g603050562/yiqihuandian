@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#2e2929"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/panel_mine_index_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+            ptr:ptrHeaderBackground="@android:color/darker_gray"
+            ptr:ptrHeaderTextColor="@android:color/white"
+            ptr:ptrMode="pullDownFromTop" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#eeeeee"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/panelMineIndexInformation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_corners_transparent_radius_0"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center" >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/indexImage"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="昵称："
+                                    android:textColor="#666666"
+                                    android:textSize="15dp" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/panelMineIndexNickname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#666666" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="查看或编辑个人资料"
+                                    android:textColor="#aaaaaa"
+                                    android:textSize="11dp" >
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="邀请码"
+                                android:textColor="#666666"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/panelMineIndexSurplusInvitation"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textColor="#666666"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="1px"
+                            android:layout_height="fill_parent"
+                            android:background="#cccccc" />
+
+                        <LinearLayout
+                            android:id="@+id/panelMineIndexSurplus"
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_corners_transparent_radius_0"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="换电次数"
+                                android:textColor="#666666"
+                                android:textSize="13dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#666666"
+                                    android:text="剩余："
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:id="@+id/panelMineIndexSurplusText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#ff9c2c"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#666666"
+                                    android:text=" 次"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+
+                    <LinearLayout
+                        android:id="@+id/panelMineIndexTransactionReceiveAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_corners_transparent_radius_0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="1px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/mine_3" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="15dp"
+                            android:text="收货地址"
+                            android:textColor="#666666"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textColor="#666666"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineIndexTransactionPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_9" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="交易密码"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineCertified"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_8" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="车辆认证"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineBooking"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="我的预约"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineReward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="奖励"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineIndexRecord"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="交易记录"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineIndexMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_6" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="系统消息"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="right|center" >
+
+                        <TextView
+                            android:id="@+id/panel_mine_index_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/red_icon_coner_1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineIndexSetUp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_7" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="设置"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineIndexInstructions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_corners_transparent_radius_0"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mine_10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:text="交易流程说明书"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

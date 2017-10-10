@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#2e2929"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/panelMineAppoReturn"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:src="@drawable/page_return" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="预约"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:background="#eeeeee" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical" >
+
+                <HorizontalScrollView
+                    android:id="@+id/panelMineAppoHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white"
+                    android:fadingEdge="@null"
+                    android:scrollbars="none" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/panelMineAppoHorizontalLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/panelMineAppoHorizontalImg"
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/title_orange" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/panelMineAppoViewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

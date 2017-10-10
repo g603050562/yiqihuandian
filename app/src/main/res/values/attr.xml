@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <attr name = "MySpinnerHint" format = "string"></attr>
+    <declare-styleable name = "MySpinner" >
+        <attr name = "MySpinnerHint"></attr>
+    </declare-styleable>
+    
+     <!-- 圆形图片 -->
+    <attr name="border_thickness" format="dimension" />
+    <attr name="border_inside_color" format="color" />
+    <attr name="border_outside_color" format="color" />
+    <declare-styleable name="Round_image_view">
+        <attr name="border_thickness" />
+        <attr name="border_inside_color" />
+        <attr name="border_outside_color" />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/navbg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/top_logo" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="70dp"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/buttom_org" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="7dp"
+                    android:src="@drawable/gift" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/bottom_view_white_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <FrameLayout
+                                android:layout_width="60dp"
+                                android:layout_height="40dp">
+
+                                <ImageView
+                                    android:id="@+id/userinfo"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/map_bottom_bg" />
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="2"
+                                        android:textSize="11dp"
+                                        android:text="我的" />
+
+                                    <LinearLayout
+                                        android:layout_width="1px"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="1">
+
+                                        <ImageView
+                                            android:layout_width="1px"
+                                            android:layout_height="20dp"
+                                            android:layout_weight="1"
+                                            android:adjustViewBounds="true"
+                                            android:src="@drawable/wode" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/bottom_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/button" />
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <FrameLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp">
+
+                                    <ImageView
+                                        android:id="@+id/shop"
+                                        android:layout_width="60dp"
+                                        android:layout_height="wrap_content"
+
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/map_bottom_bg_right" />
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="right"
+                                        android:layout_gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="1px"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:layout_width="1px"
+                                                android:layout_height="20dp"
+                                                android:layout_weight="1"
+                                                android:adjustViewBounds="true"
+                                                android:src="@drawable/shangcheng" />
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="1px"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="2"
+                                            android:textSize="11dp"
+                                            android:text="商城" />
+
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="扫码换电"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

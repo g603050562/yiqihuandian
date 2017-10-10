@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/view_gaode_img_portrait"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/location_marker_neutral" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/view_gaode_txt_num"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#000000"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

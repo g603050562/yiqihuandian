@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#2e2929"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/panelMineReceiveAddressReturn"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/page_return" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="收货地址"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#eeeeee" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="姓名："
+                            android:textColor="#666666"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/panelMineReceiveAddressName"
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="right"
+                            android:textColor="#999999"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="电话："
+                            android:textColor="#666666"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/panelMineReceiveAddressPhone"
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="right"
+                            android:textColor="#999999"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="地址："
+                            android:textColor="#666666"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/panelMineReceiveAddressAddress"
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="right"
+                            android:textColor="#999999"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#cccccc" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/panelMineReceiveAddressEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_corners_orange_radius_10"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="设置"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

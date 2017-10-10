@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#2e2929"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/panelMineInformationReturn"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/page_return" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="个人资料"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:background="#eeeeee" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/panelMineInformationPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineInformationHeadImgPanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingBottom="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="25dp"
+                        android:text="头像："
+                        android:textColor="#666666"
+                        android:textSize="17dp" />
+
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:padding="10dp" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/panelMineInformationHeadImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:id="@+id/panelMineInformationFocus"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <requestFocus />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="昵称："
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/panelMineInformationNickName"
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@drawable/edit_view"
+                        android:gravity="center"
+                        android:hint="请输入您的昵称"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="姓名："
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/panelMineInformationName"
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@drawable/edit_view"
+                        android:gravity="center"
+                        android:hint="请输入您的姓名"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="地址："
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/panelMIneInformationAddress"
+                        android:layout_width="1px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@drawable/edit_view"
+                        android:gravity="center"
+                        android:hint="请输入您的地址"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/panelMineInformationSubmit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_corners_orange_radius_10"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="提交"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

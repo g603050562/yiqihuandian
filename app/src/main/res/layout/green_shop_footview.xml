@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:padding="10dp"
+        android:text="换电网，开启电动车智能换电新生活"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textColor="#aaaaaa"/>
+
+</LinearLayout>

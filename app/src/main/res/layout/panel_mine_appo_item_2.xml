@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_corners_gray_radius_10"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="店名："
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/panelMineAppoItemName"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="剩余时间："
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelMineAppoItemMore"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="电池类型："
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelMineAppoItemBettary"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="电话"
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelMineAppoItemMobile"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="时间："
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelMineAppoItemDate"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="地址："
+                android:textColor="#ffffff"
+                android:textSize="11dp" />
+
+            <LinearLayout
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/panelMineAppoItemAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
