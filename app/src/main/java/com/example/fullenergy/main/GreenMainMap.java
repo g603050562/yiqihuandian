@@ -317,7 +317,7 @@ public class GreenMainMap extends Fragment implements LocationSource, AMapLocati
         title.setText("未能获取到您的定位信息！");
 
         TextView title1 = (TextView) view.findViewById(R.id.alertdialogContent);
-        title1.setText("    请确定您是否已经打开定位。或者您是否已经允许本程序获得定位权限，并且请您保持您手机的信号通畅！");
+        title1.setText("请确定您是否已经打开定位。或者您是否已经允许本程序获得定位权限，并且请您保持您手机的信号通畅！");
 
         TextView success = (TextView) view.findViewById(R.id.payAlertdialogSuccess);
         success.setText("确定");

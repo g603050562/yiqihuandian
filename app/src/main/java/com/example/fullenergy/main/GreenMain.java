@@ -20,6 +20,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -287,16 +288,30 @@ public class GreenMain extends FragmentActivity {
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            activity.requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.ACCESS_COARSE_LOCATION, LOCATION_SERVICE}, 1);
-            activity.requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+            lacksPermission("Manifest.permission.CAMERA");
+            lacksPermission("Manifest.permission.ACCESS_COARSE_LOCATION");
+            lacksPermission("LOCATION_SERVICE");
+        }
+    }
+
+    // 判断是否缺少权限
+    private void lacksPermission(String permission) {
+        //版本判断
+        if (Build.VERSION.SDK_INT >= 23) {
+            //减少是否拥有权限
+            int checkCallPhonePermission = activity.checkSelfPermission(permission);
+            if (checkCallPhonePermission != PackageManager.PERMISSION_GRANTED) {
+                //弹出对话框接收权限
+                activity.requestPermissions(new String[]{permission}, 1);
+                return;
+            }
+
         }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
-
     }
 
     @Click
