@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/Users/apple/AndroidStudioProjects/FullEnergy/aphidFlipViewLibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 421,
+                    "endColumn": 49,
+                    "endOffset": 466
+                },
+                "from": {
+                    "file": "/Users/apple/AndroidStudioProjects/FullEnergy/aphidFlipViewLibrary/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 421,
+                        "endColumn": 49,
+                        "endOffset": 466
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 471,
+                    "endColumn": 57,
+                    "endOffset": 524
+                },
+                "from": {
+                    "file": "/Users/apple/AndroidStudioProjects/FullEnergy/aphidFlipViewLibrary/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 471,
+                        "endColumn": 57,
+                        "endOffset": 524
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/panelShopGoodInfoUserInfoFocus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <requestFocus />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelShopGoodInfoUserInfoPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="请完善您的个人信息："
+            android:textColor="@color/green"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:text="姓名："
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/panelShopGoodInfoUserInfoSubmitName"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/edit_view"
+                android:gravity="center"
+                android:hint="请输入您的姓名"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:text="电话："
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/panelShopGoodInfoUserInfoSubmitPhone"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/edit_view"
+                android:gravity="center"
+                android:hint="请输入您的电话"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:padding="10dp"
+                android:text="地址："
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/panelShopGoodInfoUserInfoSubmitAddress"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/edit_view"
+                android:gravity="center"
+                android:hint="请输入您的地址"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/panelShopGoodInfoUserInfoSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_corners_orange_radius_10"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

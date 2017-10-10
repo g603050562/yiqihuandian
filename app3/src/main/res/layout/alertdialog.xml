@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alertdialog_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertDialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="确定支付"
+            android:textColor="@color/title_orange"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/alertDialogDivid"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/alertdialogTitleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/alertdialogContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="XXXXXXXXXXXXXX"
+            android:textColor="#999999" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/payAlertdialogSuccess"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_left_bottom_corners_radius_10"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="是"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/payAlertdialogError"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_right_bottom_corners_radius_10"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="否"
+                android:textColor="@color/title_orange"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

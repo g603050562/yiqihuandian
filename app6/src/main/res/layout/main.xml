@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0dacb2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/page_return"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/finish"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/return_page"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#0dacb2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ListView
+            android:id="@+id/lisview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/download_app"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

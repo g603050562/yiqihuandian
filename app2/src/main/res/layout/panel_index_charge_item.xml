@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="充电人:"
+                android:textColor="#666666"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelIndexChargeItemName"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="原电池ID："
+                android:textColor="#666666"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelIndexChargeItemYuanID"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="新电池ID："
+                android:textColor="#666666"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelIndexChargeItemXinID"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="换电时间："
+                android:textColor="#666666"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/panelIndexChargeItemDate"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#aaaaaa"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

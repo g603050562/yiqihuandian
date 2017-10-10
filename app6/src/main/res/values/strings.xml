@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">YHQ_Download</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="download_app">Download APP</string>
+    <string name="Waiting">Waiting......</string>
+    <string name="return_page">back</string>
+</resources>

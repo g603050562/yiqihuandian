@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/LibraryTitleBar" />
+            <option value="$PROJECT_DIR$/aphidFlipViewLibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app2" />
+            <option value="$PROJECT_DIR$/app3" />
+            <option value="$PROJECT_DIR$/app4" />
+            <option value="$PROJECT_DIR$/app5" />
+            <option value="$PROJECT_DIR$/app6" />
+            <option value="$PROJECT_DIR$/app7" />
+            <option value="$PROJECT_DIR$/app8" />
+            <option value="$PROJECT_DIR$/app9" />
+            <option value="$PROJECT_DIR$/circleimageview" />
+            <option value="$PROJECT_DIR$/imageeditlibrary" />
+            <option value="$PROJECT_DIR$/libraryPullToRefresh" />
+            <option value="$PROJECT_DIR$/swipeMenuListView" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
