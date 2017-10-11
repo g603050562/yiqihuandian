@@ -319,7 +319,6 @@ public class GreenShopItemFragment extends Fragment implements AbsListView.OnScr
                         Intent intent = new Intent(context, PanelShopGoodInfo.class);
                         intent.putExtra("id", mData.get(tempPosition).get("id").toString());
                         context.startActivity(intent);
-                        activity.overridePendingTransition(R.anim.in_right, R.anim.out_left);
                     }
                 });
 

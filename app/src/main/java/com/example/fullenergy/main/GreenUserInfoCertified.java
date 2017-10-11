@@ -174,8 +174,7 @@ public class GreenUserInfoCertified extends FragmentActivity {
                         // create "delete" item
                         SwipeMenuItem deleteItem = new SwipeMenuItem(activity);
                         // set item background
-                        deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9,
-                                0x3F, 0x25)));
+                        deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9, 0x3F, 0x25)));
                         // set item width
                         deleteItem.setWidth(PubFunction.dip2px(activity, 90));
                         // set a icon

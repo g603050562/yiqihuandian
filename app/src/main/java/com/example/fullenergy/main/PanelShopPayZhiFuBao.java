@@ -169,7 +169,6 @@ public class PanelShopPayZhiFuBao extends FragmentActivity implements OnClickLis
 	public void onClick(View v) {
 		if(v.getId() == panelShopPayZhiFuBaoReturn.getId()){
 			PanelShopPayZhiFuBao.this.finish();
-			overridePendingTransition(R.anim.in_left, R.anim.out_right);
 		}else if(v.getId() == button.getId()){
 			button_h5Pay();
 		}else if(payButton.getId() == v.getId()){
@@ -204,7 +203,6 @@ public class PanelShopPayZhiFuBao extends FragmentActivity implements OnClickLis
 		}else if(zhifubao_edit_userinfo.getId() == v.getId()){
 			Intent intent = new Intent(this,PanelShopPayZhiFuBaoEditAddress.class);
 			startActivity(intent);
-			overridePendingTransition(R.anim.in_right,R.anim.out_left);
 		}else if(pay_type_zhifubao.getId() == v.getId()){
 			pay_type_zhifubao_img.setImageResource(R.drawable.zf3);
 			pay_type_weixin_img.setImageResource(R.drawable.zf4);
@@ -328,7 +326,6 @@ public class PanelShopPayZhiFuBao extends FragmentActivity implements OnClickLis
 				intent.putExtra("type", "1");
 				mActivity.startActivity(intent);
 				mActivity.finish();
-				mActivity.overridePendingTransition(R.anim.in_right, R.anim.out_left);
 			}
 		};
 
@@ -520,7 +517,6 @@ public class PanelShopPayZhiFuBao extends FragmentActivity implements OnClickLis
 		// TODO Auto-generated method stub
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			this.finish();
-			this.overridePendingTransition(R.anim.in_left, R.anim.out_right);
 			return true;
 		}
 		return super.onKeyDown(keyCode, event);

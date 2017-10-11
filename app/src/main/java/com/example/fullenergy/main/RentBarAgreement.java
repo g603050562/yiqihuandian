@@ -83,9 +83,9 @@ public class RentBarAgreement extends Activity {
         if(type.equals("car")){
             url = "http://www.huandianwang.com/page/rent_car.html";
         }else if(type.equals("bar")){
-            url = "http://www.baidu.com";
+            url = "http://www.huandianwang.com/page/rent_car.html";
         }else if(type.equals("other")){
-            url = "http://www.baidu.com";
+            url = "http://www.huandianwang.com/page/rent_car.html";
         }
 
         webview.loadUrl(url);
